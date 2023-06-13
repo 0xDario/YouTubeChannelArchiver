@@ -1,5 +1,5 @@
-# yt-dlp-script
- youtube download batch script
+# YouTube Channel Downloader
+Download an entire youtube channel with annontaions, subtitles and metadata
 
 ### 1.) Clone Project
 - git clone https://github.com/0xDario/yt-dlp-script.git
