@@ -13,5 +13,5 @@
 
 ### 4.) Change the two variables inside the .bat file
 
-**path** is for name of directory you want to download (channel name is good choice)
-**youtubeURL** is for full youtube.com channell url
+- **path** is for name of directory you want to download (channel name is good choice)
+- **youtubeURL** is for full youtube.com channell url
