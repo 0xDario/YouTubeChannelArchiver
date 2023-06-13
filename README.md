@@ -8,7 +8,7 @@ Download an entire youtube channel with annontaions, subtitles and metadata
 - unzip FFMPEG folder into root of project directory
 - https://www.gyan.dev/ffmpeg/builds/
 
-### 3.) Install yt-dlp.exe
+### 3.) Install yt-dlp
 - place .exe in root of project directory
 - https://github.com/yt-dlp/yt-dlp/releases
 
