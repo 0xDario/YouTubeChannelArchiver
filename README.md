@@ -2,7 +2,7 @@
 Download an entire youtube channel with annontaions, subtitles and metadata
 
 ### 1.) Clone Project
-- git clone https://github.com/0xDario/yt-dlp-script.git
+```git clone https://github.com/0xDario/YouTubeChannelArchiver.git```
 
 ### 2.) Install FFMPEG
 - unzip FFMPEG folder into root of project directory
