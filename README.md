@@ -1,18 +1,45 @@
-# YouTube Channel Downloader
-Download an entire youtube channel with annontaions, subtitles and metadata
+# YouTube Downloader
 
-### 1.) Clone Project
-```git clone https://github.com/0xDario/YouTubeChannelArchiver.git```
+A browser-based tool to search YouTube videos and download them as high-quality video (MP4) or audio (MP3).
 
-### 2.) Install FFMPEG
-- unzip FFMPEG folder into root of project directory
-- https://www.gyan.dev/ffmpeg/builds/
-- ```winget install ffmpeg```
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
 
-### 3.) Install yt-dlp
-- place .exe in root of project directory
-- https://github.com/yt-dlp/yt-dlp/releases
+## Features
 
-### 4.) Change the two variables inside the .bat file
-- **path** is for name of directory you want to download (channel name is good choice, name of video)
-- **youtubeURL** is for full youtube.com channel or video URL
+- **Search YouTube** directly from the browser
+- **Download video** in the best available quality (MP4)
+- **Download audio** in the best available quality (MP3)
+- Real-time download progress tracking
+- Clean, dark-themed responsive UI
+
+## Prerequisites
+
+- **Python 3.10+**
+- **ffmpeg** installed and available on your PATH
+  - macOS: `brew install ffmpeg`
+  - Windows: `winget install ffmpeg`
+  - Linux: `sudo apt install ffmpeg`
+
+## Setup
+
+```bash
+# Clone the repo
+git clone https://github.com/0xDario/YouTubeChannelArchiver.git
+cd YouTubeChannelArchiver
+
+# Create a virtual environment (recommended)
+python3 -m venv venv
+source venv/bin/activate   # macOS / Linux
+# venv\Scripts\activate    # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+## Usage
+
+```bash
+python app.py
+```
+
+Open **http://localhost:5000** in your browser, search for a video, and click **Video** or **Audio** to download.

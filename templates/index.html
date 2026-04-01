@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Downloader</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+  <header>
+    <h1>YouTube Downloader</h1>
+    <p class="subtitle">Search, preview, and download videos or audio in the highest quality</p>
+  </header>
+
+  <main>
+    <!-- Search Bar -->
+    <form id="search-form" autocomplete="off">
+      <div class="search-bar">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search YouTube videos..."
+          required
+        />
+        <button type="submit" id="search-btn">Search</button>
+      </div>
+    </form>
+
+    <!-- Loading Spinner -->
+    <div id="search-loading" class="loading hidden">
+      <div class="spinner"></div>
+      <span>Searching...</span>
+    </div>
+
+    <!-- Error -->
+    <div id="search-error" class="error-msg hidden"></div>
+
+    <!-- Results Grid -->
+    <div id="results" class="results-grid"></div>
+
+    <!-- Active Downloads -->
+    <section id="downloads-section" class="hidden">
+      <h2>Downloads</h2>
+      <div id="downloads-list"></div>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
